@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daisy &amp; Martin are getting married!</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Daisy &amp; Martin are getting married!">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="/css/app.min.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    {{#equals page "wedding"}}
+    <header>
+      <img class="logo" src="/images/header-text.png" width="618" height="180" alt="Daisy and Martin are getting married!">
+    </header>
+
+    {{else}}
+      <header class="mini">
+        <img src="/images/logo-filled.png" width="300" height="87">
+      </header>
+    {{/equals}}
+
+    <nav>
+      <ul>
+        <li{{#equals page "wedding"}} class="active"{{/equals}}>
+          <a href="/">The Wedding</a>
+        </li>
+        <li{{#equals page "travel"}} class="active"{{/equals}}>
+          <a href="/travel">Travel</a>
+        </li>
+        <li{{#equals page "accommodation"}} class="active"{{/equals}}>
+          <a href="/accommodation">Accommodation</a>
+        </li>
+        <li{{#equals page "gifts"}} class="active"{{/equals}}>
+          <a href="/gifts">Gifts</a>
+        </li>
+        <li{{#equals page "rsvp"}} class="active"{{/equals}}>
+          <a href="/rsvp">RSVP</a>
+        </li>
+        <li{{#equals page "contact"}} class="active"{{/equals}}>
+          <a href="/contact">Contact Us</a>
+        </li>
+        <li{{#equals page "photos"}} class="active"{{/equals}}>
+          <a href="/photos">Photos</a>
+        </li>
+      </ul>
+    </nav>
+    {{{body}}}
+
+
+    <script src="/js/app.min.js"></script>
+  </body>
+</html>
