@@ -1,0 +1,93 @@
+.addthisevent-drop {
+  width: 38px;
+  height: 41px;
+  display: inline-block;
+  position: relative;
+  z-index: 999998;
+  background: url(/images/calendar-icon@2x.png) no-repeat;
+  background-size: 38px 41px;
+}
+
+.addthisevent-selected {
+}
+
+.addthisevent_dropdown {
+  width: 180px;
+  position: absolute;
+  z-index: 99999;
+  padding: 6px 0px 0px 0px;
+  background: #fff;
+  text-align: left;
+  display: none;
+  margin-top: 4px;
+  margin-left: -1px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+}
+
+.addthisevent_dropdown span {
+  width: 178px;
+  display: block;
+  height: 40px;
+  padding-left: 20px;
+  line-height: 40px;
+  background: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  color: #F07677;
+  color: #444;
+}
+
+.addthisevent_dropdown span:hover {
+  background: #F07677;
+  color: #fff;
+  text-decoration: none;
+}
+
+.addthisevent span {
+  display: none!important;
+}
+
+.addthisevent-drop ._url,.addthisevent-drop ._start,.addthisevent-drop ._end,.addthisevent-drop ._summary,.addthisevent-drop ._description,.addthisevent-drop ._location,.addthisevent-drop ._organizer,.addthisevent-drop ._organizer_email,.addthisevent-drop ._facebook_event,.addthisevent-drop ._all_day_event {
+  display: none!important;
+}
+
+.addthisevent_dropdown .copyx {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  width: 180px;
+  height: 30px;
+  display: block;
+  position: relative;
+  cursor: default;
+}
+
+.addthisevent_dropdown .brx {
+  display: none;
+}
+
+.addthisevent_dropdown .frs {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  right: 10px;
+  padding-left: 10px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  z-index: 101;
+  line-height: 110%;
+  text-decoration: none;
+  font-size: 9px;
+  color: #444;
+}
+
+.addthisevent_dropdown .frs:hover {
+  color: #F07677;
+}
+
+.addthisevent {
+  visibility: hidden;
+}

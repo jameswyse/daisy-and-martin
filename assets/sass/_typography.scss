@@ -1,0 +1,78 @@
+html, body, p, input, button, textarea, select {
+  font-family: $font;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+//
+// Typography
+//
+h1, h2 {
+  margin: 20px 0 30px 0;
+  font-family: $font-heading;
+  letter-spacing: 0.11em;
+  font-size: em($font-heading-size, $font-size);
+  font-weight: normal;
+  color: $font-heading-color;
+  text-align: center;
+
+  @media(max-width: 700px) {
+    font-size: em(modular-scale($font-heading-size, 1, 0.7), $font-size)
+  }
+}
+
+p {
+  font-weight: 100;
+  line-height: 1.5em;
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.intro {
+    text-align: center;
+    padding: 0 8%;
+  }
+
+  &.large {
+    font-size: 1.3em;
+
+    @media(max-width: 700px) {
+      font-size: 1.1em;
+    }
+  }
+}
+
+sup {
+  top: 0;
+  font-size: smaller;
+  vertical-align: super;
+}
+
+.drop {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+//
+// Links
+//
+a {
+  text-decoration: none;
+  font-family: $font-link;
+  color: $font-link-color;
+  font-weight: bold;
+  transition: color .5s ease-in-out;
+}
+
+a:hover {
+  color: $font-link-color-hover;
+}

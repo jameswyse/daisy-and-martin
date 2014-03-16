@@ -1,7 +1,11 @@
-var app = require('./lib/app');
+var moment = require('moment');
+
+var app   = require('./lib/app');
+var email = require('./lib/email');
 
 app.web.get('/', function(req, res, next) {
-  res.render('pages/home', { page: 'wedding' });
+  var remaining = moment([2014, 6, 5]).fromNow();
+  res.render('pages/home', { page: 'wedding', remaining: remaining });
 });
 
 app.web.get('/travel', function(req, res, next) {
@@ -20,12 +24,22 @@ app.web.get('/rsvp', function(req, res, next) {
   res.render('pages/rsvp', { page: 'rsvp' });
 });
 
+app.web.post('/rsvp', email.rsvp, function(req, res, next) {
+  res.render('pages/rsvp', { page: 'rsvp' });
+});
+
 app.web.get('/contact', function(req, res, next) {
+  res.render('pages/contact', { page: 'contact' });
+});
+
+app.web.post('/contact', email.contact, function(req, res, next) {
   res.render('pages/contact', { page: 'contact' });
 });
 
 app.web.get('/photos', function(req, res, next) {
   res.render('pages/photos', { page: 'photos' });
 });
+
+
 
 app.start();

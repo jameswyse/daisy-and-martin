@@ -1,0 +1,83 @@
+.cal {
+  margin: 20px auto 0 auto;
+  width: 430px;
+  height: 80px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 0 30px #eee;
+
+  @media(max-width: 700px) {
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+.cal-first {
+  margin-top: 40px;
+}
+
+.cal-time {
+  float: left;
+  width: 120px;
+  height: 60px;
+  padding-right: 20px;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+
+  @media(max-width: 700px) {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    line-height: 40px;
+    height: 40px;
+  }
+
+  small {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    padding-left: 2px;
+  }
+}
+
+.cal-title {
+  float: left;
+  width: 180px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: left;
+
+  @media(max-width: 700px) {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+.cal-add {
+  float: left;
+  width: 80px;
+  height: 60px;
+  padding-top: 8px;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+
+  @media(max-width: 700px) {
+    float: none;
+    width: 100%;
+    padding: 10px 0 0 0;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+  }
+}

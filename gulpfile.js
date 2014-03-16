@@ -10,6 +10,7 @@ var minifycss  = require('gulp-minify-css');
 var prefix     = require('gulp-autoprefixer');
 var liveReload = require('gulp-livereload');
 var bourbon    = require('node-bourbon').includePaths;
+var neat       = require('node-neat').includePaths;
 var path       = require('path');
 var fs         = require('fs');
 
@@ -60,7 +61,7 @@ gulp.task('server', function() {
 gulp.task('sass', function() {
   gulp.src(['./assets/sass/index.scss'])
     .pipe(sass({
-      includePaths: ['./assets/sass/'].concat(bourbon),
+      includePaths: ['./assets/sass/'].concat(bourbon).concat(neat),
       outputStyle: 'expanded'
     }))
     .pipe(prefix("last 3 versions", "> 1%", "ie 8", "ie 7"))

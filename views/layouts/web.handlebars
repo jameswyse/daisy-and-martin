@@ -4,10 +4,8 @@
     <title>Daisy &amp; Martin are getting married!</title>
     <meta charset="utf-8">
     <meta name="description" content="Daisy &amp; Martin are getting married!">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href="/css/app.min.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
@@ -15,20 +13,15 @@
     <![endif]-->
   </head>
   <body>
-
-    {{#equals page "wedding"}}
     <header>
-      <img class="logo" src="/images/header-text.png" width="618" height="180" alt="Daisy and Martin are getting married!">
+      <hr>
+      <img class="logo" src="/images/logo@2x.png" width="656" height="262">
+      <hr>
     </header>
 
-    {{else}}
-      <header class="mini">
-        <img src="/images/logo-filled.png" width="300" height="87">
-      </header>
-    {{/equals}}
-
     <nav>
-      <ul>
+      <a class="menu" href="#">Menu</a>
+      <ul class="nav">
         <li{{#equals page "wedding"}} class="active"{{/equals}}>
           <a href="/">The Wedding</a>
         </li>
@@ -45,7 +38,7 @@
           <a href="/rsvp">RSVP</a>
         </li>
         <li{{#equals page "contact"}} class="active"{{/equals}}>
-          <a href="/contact">Contact Us</a>
+          <a href="/contact">Contact</a>
         </li>
         <li{{#equals page "photos"}} class="active"{{/equals}}>
           <a href="/photos">Photos</a>
@@ -54,7 +47,7 @@
     </nav>
     {{{body}}}
 
-
+    <script src="http://js.addthisevent.com/atemay.js"></script>
     <script src="/js/app.min.js"></script>
   </body>
 </html>

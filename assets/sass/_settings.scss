@@ -1,0 +1,50 @@
+//
+// Settings
+//
+
+// Colours
+$black: #000;
+$white: #fff;
+$off-white: #eee;
+$light-gray: #ccc;
+$dark-gray: #444;
+$salmon: #f07677;
+$purple: #ac74c1;
+$sky-blue: #edf1fa;
+
+// Default Fonts
+$font: 'Lora', 'Open Sans', $helvetica;
+$font-size: 18px;
+$font-color: $dark-gray;
+
+// Link Fonts
+$font-link: $font;
+$font-link-color: $purple;
+$font-link-color-hover: darken($purple, 40%);
+
+// Heading Fonts
+$font-heading: 'Cinzel', $georgia;
+$font-heading-size: 42px;
+$font-heading-color: $salmon;
+
+// Navigation Fonts
+$font-nav: 'Source Sans Pro', 'Lora', 'Open Sans', $helvetica;
+$font-nav-size: 20px;
+$font-nav-color: $white;
+
+//
+// Backgrounds
+//
+$body-background-color: $sky-blue;
+$body-background-image: 'body-bg.jpg';
+
+$header-background-color: $off-white;
+$header-background-image: 'header-bg.png';
+
+$nav-background-color: $purple;
+$nav-background-color-hover: rgba(68, 68, 68, 0.1);
+$nav-background-color-active: rgba(68, 68, 68, 0.2);
+
+$page-background-color: $white;
+
+$box-background-color: rgba(250, 250, 250, 0.7);

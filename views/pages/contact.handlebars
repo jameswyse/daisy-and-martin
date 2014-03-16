@@ -1,13 +1,29 @@
-
 <div class="page">
 
-<h1>Contact Us</h1>
+  <h1>Contact Us</h1>
 
-<div class="text-info">
-  <p class="first">To get in touch with us about anything, please use this form.</p>
+  <p class="intro large">To get in touch with us about anything, please use this form.</p>
 
-  <p>If you want to let us know if you are attending, please go to <a href="/rsvp">RSVP</a>.</p>
-</div>
+  <p class="intro">If you want to let us know if you are attending, please go to <a href="/rsvp">RSVP</a>.</p>
 
+  {{#if success}}
+    <p class="intro"><strong>Your message has been sent!</strong></p>
+  {{else}}
+  <form class="box box-contact" action="/contact" method="post">
+    <label for="fullname">Full Name</label>
+    <input type="text" name="fullname" id="fullname" placeholder="Your Name" title="We need to know who you are!" required>
+
+    <label for="email">E-Mail Address</label>
+    <input type="email" name="email" id="email" placeholder="Your E-Mail Address" title="So we can return your message!" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" name="subject" id="subject" placeholder="Subject" title="We just need a short summary" required>
+
+    <label for="message">Message</label>
+    <textarea name="message" id="message" placeholder="Message.." rows="10" title="Got nothing to say?" required></textarea>
+
+    <button type="submit" name="submit" id="submit">Send It!</button>
+  </form>
+  {{/if}}
 </div>
 

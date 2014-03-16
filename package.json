@@ -21,7 +21,12 @@
     "escape-html": "~1.0.1",
     "clone": "~0.1.11",
     "dateformat": "~1.0.7-1.2.3",
-    "special-html": "0.0.1"
+    "special-html": "0.0.1",
+    "moment": "^2.5.1",
+    "gulp": "^3.5.5",
+    "node-neat": "^1.1.0",
+    "sendgrid": "^1.0.2",
+    "unhtml": "^0.1.0"
   },
   "devDependencies": {
     "node-bourbon": "~1.0.0",

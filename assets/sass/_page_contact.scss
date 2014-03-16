@@ -1,0 +1,21 @@
+.box-contact,
+.box-rsvp {
+  @include clearfix;
+  margin: 80px auto 40px auto;
+  padding: 20px 0;
+  max-width: 800px;
+
+  @media(max-width: 700px) {
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.box-rsvp {
+  max-width: 1000px;
+  padding: 40px 0;
+}

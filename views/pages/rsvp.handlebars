@@ -1,13 +1,65 @@
-
 <div class="page">
 
-<h1>RSVP</h1>
+  <h1>RSVP</h1>
 
-<div class="text-info">
-  <p class="first">Please let us know if you are able to attend before <strong>1st May 2014</strong>.</p>
+  <p class="intro large">Please let us know if you are able to attend before <strong>1<sup>st</sup> May 2014</strong>.</p>
+  <p class="intro">If you have any problems with the form below, please <a href="mailto:daisyandmartinwedding@gmail.com?subject=RSVP">contact us directly</a>.</p>
 
-  <p>If you have any problems with the form below, please contact us directly.</p>
-</div>
+  {{#if success}}
+    <p class="intro"><strong>Your RSVP has been sent!</strong></p>
+  {{else}}
+  <form class="box box-rsvp" action="/rsvp" method="post">
+    <fieldset class="left">
+      <legend>First Guest</legend>
 
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Your Name" title="We need to know who you are!" required>
+
+      <div class="radio-buttons">
+        <label class="radio">
+          <input type="radio" name="attending" id="attending-yes" value="YES!"> I would be delighted to attend!
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="attending" id="attending-no" value="NO"> I am a loser and I cannot come :(
+        </label>
+      </div>
+
+      <label for="diet">Any special dietary requirements?</label>
+      <textarea name="diet" id="diet" placeholder="You can leave this field blank." rows="2"></textarea>
+    </fieldset>
+
+    <fieldset class="right">
+      <legend>Second Guest (if applicable)</legend>
+
+      <label for="fullname-guest">Full Name</label>
+      <input type="text" name="fullname-guest" id="fullname-guest" placeholder="Your Name" title="We need to know who you are!" required>
+
+      <div class="radio-buttons">
+        <label class="radio">
+          <input type="radio" name="attending-guest" id="attending-yes" value="YES!"> I would be delighted to attend!
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="attending-guest" id="attending-no" value="NO"> I am a loser and I cannot come :(
+        </label>
+      </div>
+
+      <label for="diet-guest">Any special dietary requirements?</label>
+      <textarea name="diet-guest" id="diet-guest" placeholder="You can leave this field blank." rows="2"></textarea>
+    </fieldset>
+
+    <label for="email">Contact E-Mail Address</label>
+    <input type="email" name="email" id="email" placeholder="Your E-Mail Address" title="So we can return your message!" required>
+
+    <label for="important">Is there anything else import to tell us or to ask?</label>
+    <textarea name="important" id="important" placeholder="You can leave this field blank." rows="3"></textarea>
+
+    <label for="additional">Is there anything else that isn’t all that important, but you’d like to tell us anyway? For example, hilarious stories about Daisy or Martin. Your contribution may be used on the wedding day!</label>
+    <textarea name="additional" id="additional" placeholder="You can leave this field blank." rows="3"></textarea>
+
+    <button type="submit" name="submit" id="submit">Send It!</button>
+  </form>
+  {{/if}}
 </div>
 
