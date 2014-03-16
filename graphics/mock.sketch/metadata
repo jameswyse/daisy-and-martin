@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app</key>
+	<string>com.bohemiancoding.sketch</string>
+	<key>build</key>
+	<integer>5355</integer>
+	<key>commit</key>
+	<string>b7d299b0a34651d1a0e066786b75aa36168d5809</string>
+	<key>fonts</key>
+	<array>
+		<string>OpenSans-CondensedBold</string>
+		<string>OpenSans-CondensedBold</string>
+		<string>OpenSans-CondensedBold</string>
+		<string>OpenSans-CondensedBold</string>
+		<string>OpenSans-CondensedBold</string>
+		<string>Cinzel-Regular</string>
+		<string>Cinzel-Regular</string>
+		<string>Cinzel-Regular</string>
+		<string>AmaticSC-Regular</string>
+		<string>AmaticSC-Regular</string>
+		<string>AmaticSC-Regular</string>
+		<string>Cinzel-Regular</string>
+		<string>SourceSansPro-Regular</string>
+		<string>SourceSansPro-Light</string>
+		<string>SourceSansPro-Light</string>
+		<string>SourceSansPro-Light</string>
+		<string>SourceSansPro-Light</string>
+		<string>SourceSansPro-Light</string>
+		<string>Lora-Regular</string>
+		<string>Lora-Regular</string>
+		<string>Lora-Regular</string>
+		<string>Lora-Regular</string>
+		<string>Lora-Regular</string>
+		<string>Cinzel-Regular</string>
+		<string>Cinzel-Regular</string>
+		<string>Lora-Bold</string>
+		<string>Lora-Bold</string>
+		<string>Lora-Bold</string>
+	</array>
+	<key>length</key>
+	<integer>15879229</integer>
+	<key>version</key>
+	<integer>18</integer>
+</dict>
+</plist>
