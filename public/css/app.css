@@ -697,7 +697,7 @@ fieldset {
     min-height: 50px;
     margin-bottom: 20px; }
 
-.addthisevent-drop {
+.cal-add .addthisevent-drop {
   width: 38px;
   height: 41px;
   display: inline-block;
@@ -706,9 +706,7 @@ fieldset {
   background: url(/images/calendar-icon@2x.png) no-repeat;
   -webkit-background-size: 38px 41px;
   background-size: 38px 41px; }
-
-
-.addthisevent_dropdown {
+.cal-add .addthisevent_dropdown {
   width: 180px;
   position: absolute;
   z-index: 99999;
@@ -721,8 +719,7 @@ fieldset {
   border: 1px solid #dddddd;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); }
-
-.addthisevent_dropdown span {
+.cal-add .addthisevent_dropdown span {
   width: 178px;
   display: block;
   height: 40px;
@@ -735,19 +732,15 @@ fieldset {
   font-weight: normal;
   color: #f07677;
   color: #444444; }
-
-.addthisevent_dropdown span:hover {
+.cal-add .addthisevent_dropdown span:hover {
   background: #f07677;
   color: white;
   text-decoration: none; }
-
-.addthisevent span {
+.cal-add .addthisevent span {
   display: none !important; }
-
-.addthisevent-drop ._url, .addthisevent-drop ._start, .addthisevent-drop ._end, .addthisevent-drop ._summary, .addthisevent-drop ._description, .addthisevent-drop ._location, .addthisevent-drop ._organizer, .addthisevent-drop ._organizer_email, .addthisevent-drop ._facebook_event, .addthisevent-drop ._all_day_event {
+.cal-add .addthisevent-drop ._url, .cal-add .addthisevent-drop ._start, .cal-add .addthisevent-drop ._end, .cal-add .addthisevent-drop ._summary, .cal-add .addthisevent-drop ._description, .cal-add .addthisevent-drop ._location, .cal-add .addthisevent-drop ._organizer, .cal-add .addthisevent-drop ._organizer_email, .cal-add .addthisevent-drop ._facebook_event, .cal-add .addthisevent-drop ._all_day_event {
   display: none !important; }
-
-.addthisevent_dropdown .copyx {
+.cal-add .addthisevent_dropdown .copyx {
   margin-top: 10px;
   border-top: 1px solid #dddddd;
   width: 180px;
@@ -755,11 +748,9 @@ fieldset {
   display: block;
   position: relative;
   cursor: default; }
-
-.addthisevent_dropdown .brx {
+.cal-add .addthisevent_dropdown .brx {
   display: none; }
-
-.addthisevent_dropdown .frs {
+.cal-add .addthisevent_dropdown .frs {
   position: absolute;
   top: 10px;
   cursor: pointer;
@@ -773,11 +764,9 @@ fieldset {
   text-decoration: none;
   font-size: 9px;
   color: #444444; }
-
-.addthisevent_dropdown .frs:hover {
+.cal-add .addthisevent_dropdown .frs:hover {
   color: #f07677; }
-
-.addthisevent {
+.cal-add .addthisevent {
   visibility: hidden; }
 
 .photos {
