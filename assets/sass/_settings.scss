@@ -9,6 +9,7 @@ $off-white: #eee;
 $light-gray: #ccc;
 $dark-gray: #444;
 $salmon: #f07677;
+$green: #A2CEB4;
 $purple: #ac74c1;
 $sky-blue: #edf1fa;
 
@@ -19,8 +20,8 @@ $font-color: $dark-gray;
 
 // Link Fonts
 $font-link: $font;
-$font-link-color: $purple;
-$font-link-color-hover: darken($purple, 40%);
+$font-link-color: darken($green, 30%);
+$font-link-color-hover: darken($green, 50%);
 
 // Heading Fonts
 $font-heading: 'Cinzel', $georgia;
@@ -41,7 +42,7 @@ $body-background-image: 'body-bg.jpg';
 $header-background-color: $off-white;
 $header-background-image: 'header-bg.png';
 
-$nav-background-color: $purple;
+$nav-background-color: $green;
 $nav-background-color-hover: rgba(68, 68, 68, 0.1);
 $nav-background-color-active: rgba(68, 68, 68, 0.2);
 

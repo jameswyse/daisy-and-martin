@@ -367,7 +367,7 @@ header {
   header hr {
     border: none;
     height: 41px;
-    background: transparent url(/images/line-top@2x.png) center center no-repeat;
+    background: transparent url(/images/line@2x.png) center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     max-width: 800px; }
@@ -454,13 +454,13 @@ sup {
 a {
   text-decoration: none;
   font-family: 'Lora', 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ac74c1;
+  color: #4a8d65;
   font-weight: bold;
   -webkit-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out; }
 
 a:hover {
-  color: #3d2049; }
+  color: #274a35; }
 
 nav {
   display: block;
@@ -468,7 +468,7 @@ nav {
   max-width: 1400px;
   margin: 0 auto;
   height: 70px;
-  background: #ac74c1; }
+  background: #a2ceb4; }
   @media (max-width: 700px) {
     nav {
       width: 100%;
@@ -502,7 +502,7 @@ nav {
     font-size: 1.11111em;
     -webkit-transition: none;
     transition: none;
-    font-weight: 500; }
+    font-weight: 400; }
     nav a.menu.open {
       background: #dddddd;
       color: #444444; }
