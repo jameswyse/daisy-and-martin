@@ -7,6 +7,11 @@
     z-index: 999998;
     background: url(/images/calendar-icon@2x.png) no-repeat;
     background-size: 38px 41px;
+    border: none;
+
+    &:hover {
+      border: none;
+    }
   }
 
   .addthisevent-selected {
@@ -30,6 +35,7 @@
     width: 178px;
     display: block;
     height: 40px;
+    padding: 0;
     padding-left: 20px;
     line-height: 40px;
     background: #fff;

@@ -705,7 +705,10 @@ fieldset {
   z-index: 999998;
   background: url(/images/calendar-icon@2x.png) no-repeat;
   -webkit-background-size: 38px 41px;
-  background-size: 38px 41px; }
+  background-size: 38px 41px;
+  border: none; }
+  .cal-add .addthisevent-drop:hover {
+    border: none; }
 .cal-add .addthisevent_dropdown {
   width: 180px;
   position: absolute;
@@ -723,6 +726,7 @@ fieldset {
   width: 178px;
   display: block;
   height: 40px;
+  padding: 0;
   padding-left: 20px;
   line-height: 40px;
   background: white;
