@@ -1,16 +1,5 @@
 var $ = require('jquery/dist/jquery');
 
-addthisevent.settings({
-  mouse   : false,
-  css     : false,
-  outlook : { show: true, text: 'Add to Outlook Calendar' },
-  google  : { show: true, text: 'Add to Google Calendar' },
-  yahoo   : { show: true, text: 'Add to Yahoo Calendar' },
-  ical    : { show: true, text: 'Add to Apple Calendar' },
-  hotmail : { show: true, text: 'Add to Hotmail Calendar' },
-  facebook: { show: false, text: 'Add to Facebook Calendar' }
-});
-
 $(function() {
   var $menu = $('.menu');
 
