@@ -1,12 +1,18 @@
 {
   "name": "daisy-and-martin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Daisy and Martin",
   "main": "app.js",
   "scripts": {
-    "test": "npm run test"
+    "build": "node_modules/.bin/gulp",
+    "dev": "node_modules/.bin/gulp dev",
+    "start": "node app"
   },
   "author": "James Wyse <james@jameswyse.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jameswyse/daisy-and-martin.git"
+  },
   "license": "MIT",
   "engines": {
     "node": "0.10.x"
