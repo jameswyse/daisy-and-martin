@@ -24,7 +24,8 @@
     "special-html": "0.0.1",
     "moment": "^2.5.1",
     "sendgrid": "^1.0.2",
-    "unhtml": "^0.1.0"
+    "unhtml": "^0.1.0",
+    "gulp-util": "^2.2.14"
   },
   "devDependencies": {
     "node-bourbon": "~1.0.0",
