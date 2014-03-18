@@ -13,7 +13,7 @@ var path       = require('path');
 var fs         = require('fs');
 var mkdirp     = require('mkdirp');
 
-mkdirp(path.resolve(__dirname, 'public'));
+mkdirp.sync(path.resolve(__dirname, 'public'));
 
 //
 // Returns the user's home directory
