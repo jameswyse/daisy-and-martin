@@ -5,12 +5,10 @@ var sass       = require('gulp-sass');
 var uglify     = require('gulp-uglify');
 var size       = require('gulp-size');
 var concat     = require('gulp-concat');
-var imagemin   = require('gulp-imagemin');
 var minifycss  = require('gulp-minify-css');
 var prefix     = require('gulp-autoprefixer');
 var liveReload = require('gulp-livereload');
 var bourbon    = require('node-bourbon').includePaths;
-var neat       = require('node-neat').includePaths;
 var path       = require('path');
 var fs         = require('fs');
 
@@ -26,7 +24,15 @@ function getHome() {
 //
 gulp.task('default', ['sass', 'scripts', 'images', 'stats']);
 
+//
+// Development Task
+//
 gulp.task('dev', ['default', 'watch', 'server']);
+
+//
+// Heroku Task
+//
+gulp.task('heroku:production', ['sass', 'scripts', 'images']);
 
 //
 // Watch Task
@@ -61,7 +67,7 @@ gulp.task('server', function() {
 gulp.task('sass', function() {
   gulp.src(['./assets/sass/index.scss'])
     .pipe(sass({
-      includePaths: ['./assets/sass/'].concat(bourbon).concat(neat),
+      includePaths: ['./assets/sass/'].concat(bourbon),
       outputStyle: 'expanded'
     }))
     .pipe(prefix("last 3 versions", "> 1%", "ie 8", "ie 7"))
@@ -77,7 +83,6 @@ gulp.task('sass', function() {
 //
 gulp.task('images', function() {
   gulp.src('./assets/images/*')
-    // .pipe(imagemin())
     .pipe(gulp.dest('./public/images'));
 });
 
@@ -91,6 +96,9 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('public/js/'))
     .pipe(uglify())
     .pipe(concat('app.min.js'))
+    .pipe(gulp.dest('public/js/'));
+
+  gulp.src(['assets/js/html5shiv.min.js'])
     .pipe(gulp.dest('public/js/'));
 });
 
