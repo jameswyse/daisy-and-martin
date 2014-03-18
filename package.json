@@ -31,19 +31,18 @@
     "moment": "^2.5.1",
     "sendgrid": "^1.0.2",
     "unhtml": "^0.1.0",
-    "gulp-util": "^2.2.14",
+    "gulp-util": "~2.2.12",
     "node-bourbon": "~1.0.0",
     "gulp": "^3.5.5",
     "gulp-size": "~0.1.1",
     "gulp-concat": "~2.1.7",
     "gulp-minify-css": "~0.2.0",
-    "gulp-util": "~2.2.12",
     "gulp-uglify": "~0.1.0",
     "gulp-autoprefixer": "0.0.4",
     "gulp-sass": "~0.4.0",
     "gulp-browserify": "~0.3.3",
-    "gulp-livereload": "^1.2.0"
+    "gulp-livereload": "^1.2.0",
+    "mkdirp": "^0.3.5"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
