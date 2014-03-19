@@ -2,6 +2,7 @@ html, body, p, input, button, textarea, select {
   font-family: $font;
   font-size: $font-size;
   color: $font-color;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 //
