@@ -22,6 +22,20 @@ h1, h2 {
   }
 }
 
+h3 {
+  margin: 10px 0;
+  font-family: $font-heading;
+  letter-spacing: 0.11em;
+  font-size: em(26px, $font-size);
+  font-weight: normal;
+  color: $font-heading-color;
+  text-align: center;
+
+  @media(max-width: 700px) {
+    font-size: em(modular-scale(26px, 1, 0.7), $font-size)
+  }
+}
+
 p {
   font-weight: 100;
   line-height: 1.5em;

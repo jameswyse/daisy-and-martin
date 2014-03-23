@@ -1,15 +1,14 @@
 //
 // Photos
 //
-.photos {
+.photo {
   text-align: center;
-  margin-top: 40px;
 
   img {
-    margin: 20px;
-    margin-bottom: 0;
-    width: 200px;
+    margin: 40px auto 20px auto;
     height: auto;
+    width: 90%;
+    max-width: 900px;
     box-shadow: 0 0 3px #999, 0 0 35px #aaa;
   }
 }
@@ -17,11 +16,18 @@
 //
 // Calendar Box
 //
-.box-cal {
-  width: 90%;
-  max-width: 600px;
+.calendar {
+  width: 80%;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 0 20px 0;
+
+  h3 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
 
   @media(max-width: 700px) {
     width: 100%;
