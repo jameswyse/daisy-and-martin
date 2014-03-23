@@ -13,13 +13,14 @@
 		<string>Cinzel-Regular</string>
 		<string>Cinzel-Regular</string>
 		<string>Cinzel-Regular</string>
-		<string>AmaticSC-Regular</string>
-		<string>AmaticSC-Regular</string>
-		<string>AmaticSC-Regular</string>
 		<string>Cinzel-Regular</string>
+		<string>Cinzel-Regular</string>
+		<string>AmaticSC-Bold</string>
+		<string>AmaticSC-Regular</string>
+		<string>AmaticSC-Bold</string>
 	</array>
 	<key>length</key>
-	<integer>19812</integer>
+	<integer>23286</integer>
 	<key>version</key>
 	<integer>18</integer>
 </dict>
