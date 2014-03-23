@@ -45,8 +45,8 @@ textarea {
 
   &:active, &:focus {
     background: #fefefe;
-    border: 1px solid $purple;
-    box-shadow: 0 0 30px #ccc, 2px 2px 7px #E8E8E8 inset, 0 0 0 2px $purple;
+    border: 1px solid $green;
+    box-shadow: 0 0 30px #ccc, 2px 2px 7px #E8E8E8 inset, 0 0 0 2px $green;
   }
 }
 
@@ -76,10 +76,21 @@ button {
   width: 90%;
   max-width: 200px;
   margin: 20px 5%;
-  background: $purple;
+  background: $green;
   padding: 20px;
   color: #fff;
-  border: none;
+  border: 0;
+  border-radius: 5px;
+
+  &:hover {
+    background: darken($green, 20%);
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.2) inset;
+  }
+
+  &:active {
+    background: darken($green, 30%);
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.3) inset;
+  }
 }
 
 .radio-buttons {
