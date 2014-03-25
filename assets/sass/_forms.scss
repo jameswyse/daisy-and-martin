@@ -17,9 +17,38 @@ label {
     font-size: em($font-size, $font-size);
     text-align: left;
     padding: 0 10px;
+    cursor: pointer;
 
     input {
+      display: none;
+    }
+
+    .label-text {
+      float: left;
+    }
+
+    input + .fake-radio {
+      float: left;
+      width: 27px;
+      height: 27px;
       margin-right: 10px;
+      cursor: pointer;
+      background: transparent url('/images/icon-radio@2x.png') top left no-repeat;
+      background-size: 27px 27px;
+    }
+
+    input:checked + .fake-radio-yes {
+      background: transparent url('/images/icon-tick@2x.png') top left no-repeat;
+      background-size: 27px 27px;
+    }
+
+    input:checked + .fake-radio-no {
+      background: transparent url('/images/icon-cross@2x.png') top left no-repeat;
+      background-size: 27px 27px;
+    }
+
+    input:checked ~ .label-text {
+      font-weight: bold;
     }
   }
 }
@@ -31,7 +60,6 @@ textarea {
   display: block;
   width: 90%;
   margin: 0 5% 50px 5%;
-  padding: 20px;
   border: 1px solid #ccc;
   color: #3F3F3F;
   border-radius: 2px;
@@ -54,21 +82,35 @@ input[type=text],
 input[type=email] {
   height: 40px;
   line-height: 40px;
+  padding: 0 10px;
 }
 
 textarea {
     min-height:150px;
-    resize:vertical
+    resize:vertical;
+    padding: 10px;
 }
 
-::-webkit-input-placeholder {
-    color:#BABABA;
-    font-style:italic;
+input::-webkit-input-placeholder {
+  color: #BABABA;
+  font-style: italic;
 }
 
-input:-moz-placeholder, textarea:-moz-placeholder {
-    color:#BABABA;
-    font-style:italic;
+input::-moz-placeholder {
+  color: #BABABA;
+  font-style: italic;
+  opacity: 1;
+}
+
+input:-moz-placeholder {
+  color: #BABABA;
+  font-style: italic;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder {
+  color: #BABABA;
+  font-style: italic;
 }
 
 button {
