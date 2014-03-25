@@ -1,4 +1,5 @@
 var $ = require('jquery/dist/jquery');
+var fastclick = require('fastclick');
 
 function preload(url, selector) {
   $('<img/>')
@@ -16,6 +17,7 @@ function preload(url, selector) {
 }
 
 $(function() {
+  fastclick(document.body);
 
   preload('/images/icon-radio@2x.png');
   preload('/images/icon-tick@2x.png');
@@ -24,7 +26,7 @@ $(function() {
 
   var $menu = $('.menu');
 
-  $menu.click(function(e) {
+  $menu.on('click touc', function(e) {
     e.preventDefault();
 
     $('.nav').slideToggle(500, function() {
