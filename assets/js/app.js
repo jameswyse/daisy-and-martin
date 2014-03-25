@@ -26,15 +26,11 @@ $(function() {
 
   $menu.click(function(e) {
     e.preventDefault();
-    $('.nav').slideToggle(500, function() {
-      $menu.toggleClass('open');
 
-      if($menu.hasClass('open')) {
-        $menu.text('Close Menu');
-      }
-      else {
-        $menu.text('Menu');
-      }
+    $('.nav').slideToggle(500, function() {
+      $menu
+        .toggleClass('open')
+        .text($menu.hasClass('open') ? 'Close Menu' : 'Menu');
     });
   });
 
