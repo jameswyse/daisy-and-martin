@@ -26,7 +26,7 @@ $(function() {
 
   var $menu = $('.menu');
 
-  $menu.on('click touc', function(e) {
+  $menu.on('click', function(e) {
     e.preventDefault();
 
     $('.nav').slideToggle(500, function() {
