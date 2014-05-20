@@ -1,3 +1,5 @@
 *.sublime-*
 public
 assets/graphics
+node_modules
+.DS_Store
