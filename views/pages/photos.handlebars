@@ -1,8 +1,11 @@
 <div class="page">
   <h1>Photos</h1>
+  <p class="intro large">Thank you for coming! We'd really like to see some of your best photos from the day. You can use the form below to upload them. Thank you!
 
-  <p class="intro large">Whilst we have a photographer at the wedding for some of the day, we’d love to see some of your best photos as well.</p>
+  <form id="upload-form" class="box box-contact" action="/photos" method="post">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" placeholder="What is your name?" title="We need to know who you are!" required>
 
-  <p class="intro">Please come back here after the wedding and you will be able to upload your pictures.</p>
+    <button type="submit" id="upload-button">Choose Photos</button>
+  </form>
 </div>
-
